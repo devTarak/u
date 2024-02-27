@@ -1,9 +1,9 @@
 function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
-
-  const phrases = ["Tarak Rahman", "A Programmer", "and also an Engineer"];
-  const el = document.getElementById("typeWriterPro");
+function helloText(name, ...phrases1){
+    const phrases = phrases1;
+  const el = document.getElementById(name);
 
   let sleepTime = 100;
 
@@ -35,3 +35,6 @@ function sleep(ms) {
     }
   };
   writeLoop();
+
+}
+helloText("typeWriterPro","Tarak Rahman", "A Programmer","also an Enginner");
