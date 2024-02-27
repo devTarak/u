@@ -173,6 +173,9 @@ header{
     color: var(--ForthTextColor);
     animation: blink 1s linear infinite;
   }
+  .secondP{
+    padding-top: 4%;
+  }
 #typeWriterDown{
     color: var(--MainTextColor);
 }
@@ -193,4 +196,14 @@ header{
     background-size: 100% 100%;
     background-clip: text;
     color: transparent;
+}
+.section2 h3{
+    font-size: 32px;
+    text-align: center;
+}
+.tegShow{
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--ForthTextColor);
+    font-style: italic;
 }
