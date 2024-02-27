@@ -206,3 +206,15 @@ header{
     color: var(--ForthTextColor);
     font-style: italic;
 }
+.cursorAbb{
+    color: var(--ForthTextColor);
+    animation: blink 1s linear infinite;
+    background-color: var(--ForthTextColor);
+  }
+.typeWriteAbb{
+    color: var(--MainTextColor);
+}
+.perInfo p{
+    font-size: 22px;
+    color: var(--ThirdTextColor);
+}

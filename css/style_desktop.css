@@ -20,5 +20,16 @@
     .heroSecRight{
         width: 50%;
     }
+    .perInfo{
+        padding-top: 2%;
+        width: 50%;
+    }
+    .perInfo p{
+        margin-bottom: 1%;
+    }
+    .section2-1{
+        display: flex;
+        justify-content: space-between;
+    }
 
 }
