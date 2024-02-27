@@ -11,18 +11,28 @@
     font-family: monospace;
     margin: 0;
 }
+main{
+    margin: 0 auto; 
+}
+.heroSection .heroSecLeft p{
+    font-size: 22px;
+}
 /*all style for Header Start*/
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 1px dashed var(--MainTextColor);
     height: 50px;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+}
+.inHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
     z-index: 100;
+    width: 1280px;
+    margin: 0 auto;
 }
 /*All Logo Style Start*/
 #Mainlogo{
@@ -109,6 +119,10 @@ header{
     display: none;
 }
 @media (max-width:736px) {
+    .inHeader{
+        width: 100%;
+        position: fixed;
+    }
     .Nvicons{
         display: inline-flex;
     }

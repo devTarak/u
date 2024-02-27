@@ -1,0 +1,14 @@
+@media (min-width: 1280px){
+    main{
+        width: 1280px;
+    }
+    .heroSection{
+        display: flex;
+        justify-content: space-between;
+    }
+    .heroSecLeft{
+        padding-top: 5%;
+        vertical-align: middle;
+    }
+
+}
