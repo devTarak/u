@@ -6,6 +6,8 @@
         display: flex;
         justify-content: space-between;
         column-gap: 100px;
+        border-bottom: 1px dashed var(--MainTextColor);
+        padding-bottom: 3%;
     }
     .heroSecLeft{
         padding-top: 5%;
