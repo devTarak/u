@@ -14,6 +14,9 @@
         vertical-align: middle;
         width: 50%;
     }
+    .heroSecLeft p{
+        font-size: 22px;
+    }
     .heroSecRight{
         width: 50%;
     }

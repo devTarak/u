@@ -163,7 +163,6 @@ header{
 /*all style for Header End*/
 .heroSecLeft p{
     color: var(--SecondTextColor);
-    font-size: 20px;
 }
 #typeWriterPro{
     color: var(--MainTextColor);
