@@ -1,0 +1,152 @@
+:root{
+    --Background : #1A1A1A;
+    --MainTextColor:#33ff10; 
+    --SecondTextColor: #ff0000;
+    --ThirdTextColor:#ffee00;
+    --ForthTextColor:#ffffff;
+}
+*{
+    background-color: var(--Background);
+    color: var(--MainTextColor);
+    font-family: monospace;
+    margin: 0;
+}
+/*all style for Header Start*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed var(--MainTextColor);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+/*All Logo Style Start*/
+#Mainlogo{
+    display: flex;
+}
+#Mainlogo h6{
+    font-size: 35px;
+    padding-left: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+}
+.logo h3{
+    font-size: 35px;
+    text-align: left;
+}
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes reverse-typing {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.typing-text {
+    overflow: hidden;
+    border-right: .06em solid transparent; 
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: reverse-typing 4s steps(5, end) infinite, 
+               typing 4s steps(5, end) infinite, 
+               blink-border 0.5s infinite; 
+}
+
+@keyframes blink-border {
+    0%, 49.9%, 100% {
+        border-color: var(--ForthTextColor); 
+    }
+    50%, 99.9% {
+        border-color: transparent; 
+    }
+}
+/*All Logo Style End*/
+.navMenu a{
+    text-decoration: none;
+    display: inline;
+    padding: 13px 15px;
+    font-size: 20px;
+}
+.navMenu nav{
+    text-align: center;
+}
+.Nvicons{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 5%;
+}
+#check{
+    display: none;
+}
+@media (max-width:736px) {
+    .Nvicons{
+        display: inline-flex;
+    }
+    #check:checked~.Nvicons #menu-ico{
+        display: none;
+    }
+    .Nvicons #close-ico{
+        display: none;
+    }
+    #check:checked~.Nvicons #close-ico{
+        display: block;
+    }
+    .navMenu nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 0;
+        transition: 0.3s ease;
+    }
+    #check:checked~.navMenu nav{
+        height: 270px;
+        border-top: 1px dashed var(--MainTextColor);
+        border-bottom: 1px dashed var(--MainTextColor);
+    }
+    .navMenu nav a{
+        display: block;
+        padding: 10px 0px;
+        font-size: 30px;
+        transform: translateY(-50px);
+        transition: 0.3s ease;
+        opacity: 0;
+    }
+    #check:checked~.navMenu nav a{
+        transform: translateY(0);
+        transition-delay: calc(0.15s * var(--i));
+        opacity: 1;
+    }
+}
+/*all style for Header End*/
