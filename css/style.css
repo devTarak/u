@@ -173,6 +173,13 @@ header{
     color: var(--ForthTextColor);
     animation: blink 1s linear infinite;
   }
+#typeWriterDown{
+    color: var(--MainTextColor);
+}
+#typeCursorDown{
+    color: var(--ForthTextColor);
+    animation: blink 1s linear infinite;
+  }
   @keyframes blink {
     0% {
       opacity: 100%;
@@ -181,3 +188,9 @@ header{
       opacity: 0%;
     }
   }
+.heroSecRight p{
+    background: url(/assets/formatBG.webp);
+    background-size: 100% 100%;
+    background-clip: text;
+    color: transparent;
+}

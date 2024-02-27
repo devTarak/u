@@ -5,10 +5,15 @@
     .heroSection{
         display: flex;
         justify-content: space-between;
+        column-gap: 100px;
     }
     .heroSecLeft{
         padding-top: 5%;
         vertical-align: middle;
+        width: 50%;
+    }
+    .heroSecRight{
+        width: 50%;
     }
 
 }
