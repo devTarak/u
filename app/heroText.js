@@ -2,7 +2,7 @@ function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
-  const phrases = ["Tarak Rahman", "A Programmer", "and an Engineer"];
+  const phrases = ["Tarak Rahman", "A Programmer", "and also an Engineer"];
   const el = document.getElementById("typeWriterPro");
 
   let sleepTime = 100;
