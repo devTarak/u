@@ -14,9 +14,6 @@
 main{
     margin: 0 auto; 
 }
-.heroSection .heroSecLeft p{
-    font-size: 22px;
-}
 /*all style for Header Start*/
 header{
     border-bottom: 1px dashed var(--MainTextColor);
@@ -164,3 +161,23 @@ header{
     }
 }
 /*all style for Header End*/
+.heroSecLeft p{
+    color: var(--SecondTextColor);
+    font-size: 20px;
+}
+#typeWriterPro{
+    color: var(--MainTextColor);
+    font-weight: bold;
+}
+#typeCursor{
+    color: var(--ForthTextColor);
+    animation: blink 1s linear infinite;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 100%;
+    }
+    50% {
+      opacity: 0%;
+    }
+  }
