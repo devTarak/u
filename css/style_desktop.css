@@ -24,6 +24,9 @@
         padding-top: 2%;
         width: 60%;
     }
+    .section2{
+        border-bottom: 1px dashed var(--MainTextColor);
+    }
     .section2-1{
         padding-top: 5%;
     }
