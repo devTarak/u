@@ -1,5 +1,6 @@
 :root{
     --Background : #1A1A1A;
+    --forBackground : #0c0c0c;
     --MainTextColor:#33ff10; 
     --SecondTextColor: #ff0000;
     --ThirdTextColor:#ffee00;
@@ -217,4 +218,52 @@ header{
 .perInfo p{
     font-size: 22px;
     color: var(--ThirdTextColor);
+}
+.expInfo-2-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.expInfo-1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 10px;
+}
+.expInfo-1::before{
+    content: " ";
+    position: absolute;
+    background: linear-gradient(var(--SecondTextColor),var(--MainTextColor));
+    animation: rotate 4s linear infinite;
+}
+.expInfo-1::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--Background);
+    inset: 4px;
+    border-radius: 16px;
+}
+.expInfo-1 span{
+    position: relative;
+    color: var(--ForthTextColor);
+    font-size: 50px;
+    z-index: 10;
+    line-height: 25px;
+    text-align: center;
+    background: transparent;
+}
+.expInfo-1 span span{
+    font-size: 20px;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
 }

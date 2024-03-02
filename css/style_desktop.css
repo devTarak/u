@@ -22,7 +22,13 @@
     }
     .perInfo{
         padding-top: 2%;
-        width: 50%;
+        width: 60%;
+    }
+    .section2-1{
+        padding-top: 5%;
+    }
+    .expInfo{
+        width: 40%;
     }
     .perInfo p{
         margin-bottom: 1%;
@@ -30,6 +36,15 @@
     .section2-1{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+    .expInfo-1{
+        width: 200px;
+        height: 150px;
+    }
+    .expInfo-1::before{
+        width: 75px;
+        height: 160%;
     }
 
 }

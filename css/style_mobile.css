@@ -10,9 +10,17 @@
 .secondP{
     height: 250px;
 }
-.perInfo{
+.section2-1{
     padding-top: 10%;
 }
 .perInfo p{
     margin-bottom: 3%;
+}
+.expInfo-1{
+    width: 150px;
+    height: 200px;
+}
+.expInfo-1::before{
+    width: 75px;
+    height: 140%;
 }
