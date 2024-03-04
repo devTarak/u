@@ -49,5 +49,15 @@
         width: 75px;
         height: 160%;
     }
+    .section3-main{
+        gap: 40px;
+    }
+    .section3-main .scard{
+        width: 220px;
+        height: 220px;
+    }
+    .section3{
+        border-bottom: 1px dashed var(--MainTextColor);
+    }
 
 }

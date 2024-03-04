@@ -197,7 +197,7 @@ header{
     background-clip: text;
     color: transparent;
 }
-.section2 h3{
+.TitleSection {
     font-size: 32px;
     text-align: center;
 }
@@ -266,4 +266,119 @@ header{
     100%{
         transform: rotate(360deg);
     }    
+}
+.section3-main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10%;
+}
+.section3-main .scard{
+    position: relative;
+    background-color: var(--Background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3-main .scard .spersent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+}
+.section3-main .scard .spersent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    transform: rotate(270deg);
+}
+.section3-main .scard .spersent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke: var(--forBackground);
+    transform: translate(5px, 5px);
+}
+.section3-main .scard .spersent svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray:440;
+    opacity: 0;
+    stroke-dashoffset: calc(440 - (440 * var(--nump)) / 100);
+    animation: sfadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+@keyframes sfadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.section3-main .scard .spersent .sdot{
+    position: absolute;
+    background: transparent;
+    inset: 5px;
+    z-index: 10;
+    transform: rotate(calc(3.6deg * var(--nump)));
+    animation: dotAnimation 2s linear forwards;
+}
+@keyframes dotAnimation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * var(--nump)));
+    }
+    
+}
+.section3-main .scard .spersent .sdot::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--clr);
+    top: -5px;
+    left: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--clr),0 0 30px var(--clr);
+}
+.section3-main .scard .spersent .snumber{
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: sfadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+.section3-main .scard .spersent .snumber h6{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ForthTextColor);
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.section3-main .scard .spersent .snumber h6 span{
+    background: transparent;
+    font-weight: 300;
+    color: var(--ForthTextColor);
+    font-size: 0.7em;
+}
+.section3-main .scard .spersent .snumber p{
+    background: transparent;
+    font-size: 0.75em;
+    line-height: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
 }

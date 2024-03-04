@@ -10,6 +10,9 @@
 .secondP{
     height: 250px;
 }
+.section2{
+    margin-bottom: 10%;
+}
 .section2-1{
     padding-top: 10%;
 }
@@ -23,4 +26,11 @@
 .expInfo-1::before{
     width: 75px;
     height: 140%;
+}
+.section3-main{
+    gap: 70px;
+}
+.section3-main .scard{
+    width: 120px;
+    height: 120px;
 }
