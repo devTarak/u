@@ -29,6 +29,7 @@
 }
 .section3-main{
     gap: 60px;
+    width: 350px;
 }
 .section3-main .scard{
     width: 100px;

@@ -290,10 +290,10 @@ header{
 }
 .section3-main .scard .spersent svg{
     position: relative;
-    width: 150px;
-    height: 150px;
     background: transparent;
     transform: rotate(270deg);
+    width: 150px;
+    height: 150px;
 }
 .section3-main .scard .spersent svg circle{
     width: 100%;
