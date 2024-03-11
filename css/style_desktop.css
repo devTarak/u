@@ -24,7 +24,7 @@
         padding-top: 2%;
         width: 60%;
     }
-    .section2{
+    .section2, .section3, .section4{
         border-bottom: 1px dashed var(--MainTextColor);
     }
     .section2-1{
@@ -45,19 +45,20 @@
         width: 200px;
         height: 150px;
     }
+    .servicesLs-2-1 .expInfo-1{
+        width: 270px;
+        height: 470px;
+    }
     .expInfo-1::before{
         width: 75px;
         height: 160%;
     }
-    .section3-main{
+    .section3-main, .servicesLs-2-1{
         gap: 40px;
     }
     .section3-main .scard{
         width: 220px;
         height: 220px;
-    }
-    .section3{
-        border-bottom: 1px dashed var(--MainTextColor);
     }
 
 }

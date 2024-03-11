@@ -10,7 +10,7 @@
 .secondP{
     height: 250px;
 }
-.section2{
+.section2, .section3{
     margin-bottom: 10%;
 }
 .section2-1{
@@ -23,11 +23,15 @@
     width: 130px;
     height: 170px;
 }
+.servicesLs-2-1 .expInfo-1{
+    width: 270px;
+    height: 470px;
+}
 .expInfo-1::before{
     width: 75px;
     height: 140%;
 }
-.section3-main{
+.section3-main, .servicesLs-2-1{
     gap: 60px;
     width: 350px;
 }
