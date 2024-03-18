@@ -504,4 +504,5 @@ header{
 }
 .projectsCard a:hover{
     box-shadow: none;
+    transition: 0.5s;
 }
