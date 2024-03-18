@@ -505,4 +505,13 @@ header{
 .projectsCard a:hover{
     box-shadow: none;
     transition: 0.5s;
+    animation: halkaBaka forwards;
+}
+@keyframes halkaBaka {
+    0%{
+        rotate: -10deg;
+    }
+    100%{
+        rotate: -10deg;
+    }
 }
