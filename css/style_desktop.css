@@ -24,7 +24,7 @@
         padding-top: 2%;
         width: 60%;
     }
-    .section2, .section3, .section4{
+    .section2, .section3, .section4, .section5{
         border-bottom: 1px dashed var(--MainTextColor);
     }
     .section2-1{
