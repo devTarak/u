@@ -441,3 +441,67 @@ header{
     width: 225%;
     top: -100%;
 }
+.PortfolioCardBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding:20px 0px;
+}
+.projectsCard{
+    width: 270px;
+    overflow: hidden;
+    padding: 20px;
+    border: var(--MainTextColor) 2px solid;
+    border-radius: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.projectsCard:hover{
+    box-shadow: 0 0 2px var(--MainTextColor), 0 0 10px var(--MainTextColor);
+    transition: 0.6s;
+}
+.projectsCardImg{
+    display: flex;
+    flex-direction: column;
+    padding-top: 14%;
+    align-items: center;
+   width: 250px;
+   height: 225px;
+   overflow: hidden;
+   background: url(../assets/farmelaptop2.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover; 
+}
+.projectsCardImg img{
+    width: 200px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.projectCardTitle{
+    color: var(--MainTextColor);
+    font-size: 18px;
+    font-weight: bold;
+}
+.projectCardDetails p{
+    font-size: 14px;
+    color: var(--SecondTextColor);
+}
+.projectsCard a{
+    margin-top: 20px;
+    padding: 5%;
+    border: var(--MainTextColor) 2px dashed;
+    box-shadow: 0 0 12px var(--forBackground);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+.projectsCard a:hover{
+    box-shadow: none;
+}
