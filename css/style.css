@@ -555,3 +555,14 @@ header{
     transition: 0.5s;
     animation: halkaBaka forwards;
 }
+footer{
+    background-color: var(--forBackground);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    background-color: transparent;
+    font-size: 20px;
+}
