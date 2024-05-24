@@ -18,9 +18,19 @@ function infoConsole(){
     });
   
 }
-function formSubminMain(){
-    
+function formSubmitMain() {
+    Email.send({
+        SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+        To : 'codertarak@gmail.com',
+        From : document.getElementById("emailF").value,
+        Subject : "New Form Submited from Portfolio2.O",
+        Body : "Name: " + document.getElementById("nameF").value +"\n"+"Email:"+document.getElementById("emailF").value+"\n"+"Phone: "+document.getElementById("phoneF".value)+"\n"+"Message: "+document.getElementById("messageF").value,
+    }).then(
+      message => alert("hacknote added")
+    );
+    return false
 }
+
 document.onselectstart = () => {
     event.preventDefault();
 }

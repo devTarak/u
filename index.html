@@ -272,12 +272,12 @@
             <!--Contact Content-->
             <h3 class="TitleSection"><span class="tegShow">&lt;h3&gt; </span>Contact<span class="tegShow"> &lt;h3/&gt;</span></h3>
         <div class="Cform">
-            <form action="" class="formMain" id="formBig">
+            <form action="" class="formMain" id="formBig" onsubmit="return formSubmitMain()">
                 <input type="text" name="name" placeholder="Enter Your Name" class="CfieldSmall" id="nameF">
                 <input type="email" name="email" placeholder="Enter your Email" class="CfieldSmall" id="emailF">
-                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter your Phone Number" class="CfieldSmall" id="phoneF">
+                <input type="tel" name="phone" placeholder="Enter your Phone Number" class="CfieldSmall" id="phoneF">
                 <textarea name="message" id="messageF" class="CfieldBig" placeholder="Enter Your Message"></textarea>
-                <button type="submit" class="CfieldButton" form="formBig" value="submit" onsubmit="formSubminMain()">Send Message</button>
+                <button type="submit" class="CfieldButton" form="formBig" value="submit">Send Message</button>
             </form>
         </div>
         </div>
@@ -287,5 +287,6 @@
     </footer>
     <script src="app/heroText.js"></script>
     <script src="app/main.js"></script>
+    <script src="app/smtp.js"></script>
 </body>
 </html>
