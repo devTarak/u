@@ -18,6 +18,9 @@ function infoConsole(){
     });
   
 }
+function formSubminMain(){
+    
+}
 document.onselectstart = () => {
     event.preventDefault();
 }

@@ -60,5 +60,17 @@
         width: 220px;
         height: 220px;
     }
+    .CfieldSmall{
+        width: 32%;
+    }
+    .CfieldBig{
+        width: 80%;
+        height: 150px;   
+    }
+    .CfieldButton{
+        width: 15%;
+        padding: 2%;
+    font-size: 22px;
+    }
 
 }

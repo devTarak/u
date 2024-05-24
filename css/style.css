@@ -517,3 +517,41 @@ header{
         rotate: -10deg;
     }
 }
+.formMain{
+    osition: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5%;
+}
+.CfieldSmall, .CfieldBig{
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 2px solid var(--MainTextColor);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
+}
+.CfieldSmall:focus, .CfieldBig:focus{
+    border: var(--SecondTextColor) 2px solid;
+}
+.CfieldSmall{
+    height: 40px;
+}
+.CfieldButton{
+    margin-top: 15px;
+    border: var(--MainTextColor) 2px dashed;
+    box-shadow: 0 0 12px var(--forBackground);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.CfieldButton:hover{
+    box-shadow: none;
+    transition: 0.5s;
+    animation: halkaBaka forwards;
+}
